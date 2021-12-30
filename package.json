@@ -1,0 +1,22 @@
+{
+  "name": "flag-quiz",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.5",
+    "vue": "^3.2.25",
+    "vue-twemoji": "^1.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "sass": "^1.45.1",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vite-svg-loader": "^3.1.1",
+    "vue-tsc": "^0.29.8"
+  }
+}
