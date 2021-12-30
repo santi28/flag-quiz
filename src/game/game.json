@@ -1,14 +1,70 @@
 [
   {
-    "country": "Antartida",
-    "flag": "aq"
-  },
-  {
-    "country": "Argentina",
-    "flag": "ar"
+    "country": "Isla Ascensión",
+    "flag": "🇦🇨"
   },
   {
     "country": "Andorra",
-    "flag": "ad"
+    "flag": "🇦🇩"
+  },
+  {
+    "country": "Emiratos Árabes Unidos",
+    "flag": "🇦🇪"
+  },
+  {
+    "country": "Afganistán",
+    "flag": "🇦🇫"
+  },
+  {
+    "country": "Antigua y Barbuda",
+    "flag": "🇦🇬"
+  },
+  {
+    "country": "Anguila",
+    "flag": "🇦🇮"
+  },
+  {
+    "country": "Albania",
+    "flag": "🇦🇱"
+  },
+  {
+    "country": "Arménia",
+    "flag": "🇦🇲"
+  },
+  {
+    "country": "Angola",
+    "flag": "🇦🇴"
+  },
+  {
+    "country": "Antártida",
+    "flag": "🇦🇶"
+  },
+  {
+    "country": "Argentina",
+    "flag": "🇦🇷"
+  },
+  {
+    "country": "Samoa Americana",
+    "flag": "🇦🇸"
+  },
+  {
+    "country": "Austria",
+    "flag": "🇦🇹"
+  },
+  {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  {
+    "country": "Aruba",
+    "flag": "🇦🇼"
+  },
+  {
+    "country": "Islas Aland",
+    "flag": "🇦🇽"
+  },
+  {
+    "country": "Azerbaiyán",
+    "flag": "🇦🇿"
   }
 ]
