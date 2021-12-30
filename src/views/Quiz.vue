@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue';
+import { defineAsyncComponent, defineEmits } from 'vue';
+
 
 import ICountry from '../interfaces/country.interface'
 import game from '../game/game.json';
-
 const flags_tag: string[] = game.map(({ flag }) => flag);
 
 const getRandomFlag = (...exluded: string[]) => {
@@ -32,13 +32,11 @@ country_names.sort(() => Math.random() - 0.5);
 /// <reference path="../index.d.ts" />
 const Flag = defineAsyncComponent(() => import(`../game/flags/${answer_flag_1.flag}.svg`));
 
+const emit = defineEmits(['answer'])
+
 const responseHandler = (response: string) => {
-  const is_correct = country_names.find(({ name }) => name === response)?.correct;
-  if (is_correct) {
-    alert('Correct!');
-  } else {
-    alert('Wrong!');
-  }
+  const isCorrect = country_names.find(({ name }) => name === response)?.correct;
+  emit('answer', isCorrect, response);
 };
 </script>
 
@@ -53,27 +51,33 @@ const responseHandler = (response: string) => {
 
 <style scoped>
 .flag_wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .flag {
-  width: 195%;
-  max-width: 700px;
+  width: 80%;
+  max-width: 600px;
   background-color: #221E26;
 }
 
 .button_wrapper {
   display: flex;
+  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
+  padding-bottom: 50px;
 }
 
 button {
-  background-color: whitesmoke;
+  background-color: #6520F6;
+  color: #fff;
   border: none;
+  width: 80%;
 
   font-size: 1.8rem;
   font-family: 'Outfit', sans-serif;
@@ -83,5 +87,17 @@ button {
   padding: 25px 60px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 875px) {
+  .button_wrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    width: fit-content;
+  }
 }
 </style>
